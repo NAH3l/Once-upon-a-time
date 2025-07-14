@@ -1,0 +1,9 @@
+# Fichiers de données
+content.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log 

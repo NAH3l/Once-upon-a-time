@@ -1,0 +1,2 @@
+Include shooting stars into main_page
+Include life and other animation into main_page

@@ -1,6 +1,5 @@
-function handler(_req: Request): Response {
-  return new Response("Hello, World!");
-}
-
-// To start the server on the default port, call `Deno.serve` with the handler.
-Deno.serve(handler);
+import { serveDir } from "jsr:@std/http/file-server";
+Deno.serve((req) => {
+  console.log(req.headers.get("User-Agent"))
+  return serveDir(req);
+});
